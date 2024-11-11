@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Kayque Costa da Silva" />
+    <meta name="keywords" content="web, html, aprimora"/>
+    <meta name="viewport" content="withwidth=device-width, initial-scale=l.0">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="Css/Style.css">
+
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="Index.html" method="post">
+        <div class="part1">
+        
+        <label for="endereco">Endereço</label>
+        <input type= "text" name = "endereco" id="endereco" placeholder="R.Santos Ramon"><br>
+
+        <label for="cidade">Cidade</label>
+        <input type= "text" name = "cidade" id="cidade" placeholder="Xique Xique Bahia"><br>
+
+        <label for="idade">Idade</label>
+        <input type="number" name="idade" id="idade" min="0" max="150" step="1" placeholder="18"><br>
+
+        <label for="qtde">Quantidade</label>
+        <input type="range" name="qtde" id="qtde" min="0" max="150" step="0.5" oninput="valorQtde.value = qtde.value">
+        <output name="valorQtde" id="valorQtde">50</output><br>
+
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="pedrinho_matadordePorco@gmail.com"><br>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" id="telefone"
+        placeholder="(99) 9999-9999"><br>
+
+        <label for="site">URL Site</label>
+        <input type="url" name="Site" id="site" placeholder="http://seilaoque.com.br"><br>
+        </div>
+        <br>
+        <input type="submit" name="Enviar" id="enviar">
+        <input type="reset" name="Limpar" id="limpar">
+    </form>
+
+</body>
+</html>
